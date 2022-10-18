@@ -1,20 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from "./Search.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from React!!</h1>
-        <a
+        
+        <h1>Weather Search Engine</h1>
+        <Search />
+        <p><a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/yana-zakharchenko/weather-react"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+          Open-sourced 
+        </a> by Yana Zakharchenko</p>
       </header>
     </div>
   );
