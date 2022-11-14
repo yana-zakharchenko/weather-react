@@ -1,24 +1,40 @@
-import './App.css';
-import Search from "./Search.js";
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1>Weather Search Engine</h1>
-        <Search />
-        <p><a
-          className="App-link"
-          href="https://github.com/yana-zakharchenko/weather-react"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open-sourced 
-        </a> by Yana Zakharchenko</p>
-      </header>
+      <div className="container">
+        <Weather defaultCity="Kyiv" />
+
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://yana-frontend-dev.netlify.app/contact.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yana Zakharchenko
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/yana-zakharchenko/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://peaceful-piroshki-003b30.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
